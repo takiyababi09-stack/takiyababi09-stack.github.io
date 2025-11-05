@@ -1,0 +1,240 @@
+/* Pengaturan Umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Header/Navigasi */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: 400;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #34495e;
+    border-radius: 4px;
+}
+
+/* Bagian Hero */
+.hero {
+    background-color: #ecf0f1;
+    text-align: center;
+    padding: 80px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Bagian Umum (Tentang, Proyek, Keahlian) */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    position: relative;
+}
+
+section h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 10px auto 0;
+}
+
+/* Bagian Keahlian */
+.skills {
+    background-color: #f9f9f9;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-item {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 400;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Bagian Proyek */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-item {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.project-item h4 {
+    color: #3498db;
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #95a5a6;
+}
+
+/* Responsif Dasar */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+}
